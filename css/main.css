@@ -1,0 +1,59 @@
+/* 添加星星动画 */
+.star {
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  animation: twinkle 1.5s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+/* 行星悬浮效果 */
+.planet {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(3px);
+  transition: transform 0.3s ease-out;
+}
+
+.planet-yellow {
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(#ffd700, #ff8c00);
+  right: 15%;
+  top: 15%;
+  z-index: 1;
+}
+
+.planet-blue {
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(#4f9ff0, #1a4b8f);
+  left: 10%;
+  bottom: 20%;
+  z-index: 1;
+}
+
+.planet-red {
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(#ff6b6b, #8b0000);
+  right: 30%;
+  bottom: 25%;
+  z-index: 1;
+}
+
+/* 按钮悬浮效果 */
+.explore-btn {
+  transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+  background: #ffd700;
+  color: #0f1016;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+} 
